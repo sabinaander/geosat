@@ -1,0 +1,56 @@
+
+/* bara för att se mitten av sidan
+body::before{
+    content: "";
+    position: fixed;
+    height: 100vh;
+    width: 1px;
+    background-color: white;
+    left:50%;
+    top:0;
+    z-index: 10;
+} */
+
+::selection {
+    color: white;
+    background: #F59E0B;
+  }
+
+.background-image{
+    background-image: url(/img/con1.png);
+    background-position: center;
+
+    animation: 20s change-background ease-in-out infinite;
+}
+
+h1{
+    text-shadow: 1px 1px 0px #f79f1a, -1px -1px 0 #f79f1a;
+    -webkit-text-stroke: 2px #f79f1a;
+}
+
+@keyframes change-background{
+
+    0%{
+        background-image: url(/img/con1.png);
+        background-position: center;
+    }
+
+    25% {
+        background-image: url(/img/con2.png);
+        background-position: center;
+
+    }
+
+    50%{
+        background-image: url(/img/con3.png);
+    }
+
+    75%{
+        background-image: url(/img/con4.png);
+    }
+
+    100%{
+    background-image: url(/img/con5.png);
+    }
+
+}
